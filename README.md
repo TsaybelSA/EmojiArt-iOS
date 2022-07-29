@@ -12,7 +12,7 @@ Tap on emoji to start editing. After can pinch to zoom, pan to drag.
  - Grag&Drop
  - Edit emoji groups or make your favorites
  - Undo or redo unnecessary actions
-## Feature updates
+## Possible Improvements
 - Fix share screen
 ## Requirements
 iOS 15+
