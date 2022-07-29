@@ -13,6 +13,6 @@ Tap on emoji to start editing. After can pinch to zoom, pan to drag.
  - Edit emoji groups or make your favorites
  - Undo or redo unnecessary actions
 ## Possible Improvements
-- Fix share screen
+- Fix IPad share screen
 ## Requirements
 iOS 15+
