@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1703F26D286D90C6003B8613 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703F26C286D90C6003B8613 /* ShareView.swift */; };
+		1703F26F286DB809003B8613 /* ScreenshotMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703F26E286DB809003B8613 /* ScreenshotMakerView.swift */; };
+		1703F271286DB83C003B8613 /* ScreenshotMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703F270286DB83C003B8613 /* ScreenshotMaker.swift */; };
+		1703F27D286EA551003B8613 /* IdentifiableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703F27C286EA551003B8613 /* IdentifiableImage.swift */; };
 		17B64C8F27EB68F10039B2AC /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B64C8E27EB68F10039B2AC /* PaletteStore.swift */; };
 		17B64C9727EEB6F60039B2AC /* PaletteChoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B64C9627EEB6F60039B2AC /* PaletteChoser.swift */; };
 		17B64C9927EEB7090039B2AC /* PaletteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B64C9827EEB7090039B2AC /* PaletteManager.swift */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1703F26C286D90C6003B8613 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		1703F26E286DB809003B8613 /* ScreenshotMakerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotMakerView.swift; sourceTree = "<group>"; };
+		1703F270286DB83C003B8613 /* ScreenshotMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotMaker.swift; sourceTree = "<group>"; };
+		1703F27C286EA551003B8613 /* IdentifiableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableImage.swift; sourceTree = "<group>"; };
 		17B64C8E27EB68F10039B2AC /* PaletteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
 		17B64C9627EEB6F60039B2AC /* PaletteChoser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteChoser.swift; sourceTree = "<group>"; };
 		17B64C9827EEB7090039B2AC /* PaletteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteManager.swift; sourceTree = "<group>"; };
@@ -64,6 +72,9 @@
 				17B64C9627EEB6F60039B2AC /* PaletteChoser.swift */,
 				17B64C9827EEB7090039B2AC /* PaletteManager.swift */,
 				17B64C9A27EEB7160039B2AC /* PaletteEditor.swift */,
+				1703F26C286D90C6003B8613 /* ShareView.swift */,
+				1703F270286DB83C003B8613 /* ScreenshotMaker.swift */,
+				1703F26E286DB809003B8613 /* ScreenshotMakerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -82,6 +93,7 @@
 			children = (
 				EC030751263771D0001E9F47 /* EmojiArtModel.Background.swift */,
 				EC03074F263771AD001E9F47 /* EmojiArtModel.swift */,
+				1703F27C286EA551003B8613 /* IdentifiableImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,7 +212,9 @@
 				EC030743263771AD001E9F47 /* EmojiArtDocumentView.swift in Sources */,
 				EC030741263771AD001E9F47 /* EmojiArtApp.swift in Sources */,
 				17B64C9927EEB7090039B2AC /* PaletteManager.swift in Sources */,
+				1703F27D286EA551003B8613 /* IdentifiableImage.swift in Sources */,
 				EC030757263774A2001E9F47 /* UtilityExtensions.swift in Sources */,
+				1703F26F286DB809003B8613 /* ScreenshotMakerView.swift in Sources */,
 				17B64C8F27EB68F10039B2AC /* PaletteStore.swift in Sources */,
 				17B64C9B27EEB7160039B2AC /* PaletteEditor.swift in Sources */,
 				EC030754263772D8001E9F47 /* EmojiArtDocument.swift in Sources */,
@@ -208,6 +222,8 @@
 				EC030750263771AD001E9F47 /* EmojiArtModel.swift in Sources */,
 				EC030752263771D0001E9F47 /* EmojiArtModel.Background.swift in Sources */,
 				17B64C9727EEB6F60039B2AC /* PaletteChoser.swift in Sources */,
+				1703F271286DB83C003B8613 /* ScreenshotMaker.swift in Sources */,
+				1703F26D286D90C6003B8613 /* ShareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -320,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

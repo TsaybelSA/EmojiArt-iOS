@@ -17,7 +17,7 @@
                BlueprintIdentifier = "EC03073C263771AD001E9F47"
                BuildableName = "EmojiArt.app"
                BlueprintName = "EmojiArt"
-               ReferencedContainer = "container:EmojiArt - for homeWork.xcodeproj">
+               ReferencedContainer = "container:EmojiArt iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "EC03073C263771AD001E9F47"
             BuildableName = "EmojiArt.app"
             BlueprintName = "EmojiArt"
-            ReferencedContainer = "container:EmojiArt - for homeWork.xcodeproj">
+            ReferencedContainer = "container:EmojiArt iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "EC03073C263771AD001E9F47"
             BuildableName = "EmojiArt.app"
             BlueprintName = "EmojiArt"
-            ReferencedContainer = "container:EmojiArt - for homeWork.xcodeproj">
+            ReferencedContainer = "container:EmojiArt iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

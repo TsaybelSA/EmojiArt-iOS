@@ -270,4 +270,9 @@ extension Array where Element == NSItemProvider {
     }
 }
 
-
+extension View {
+	func screenshotView(_ closure: @escaping ScreenshotMakerClosure) -> some View {
+		let screenshotView = ScreenshotMakerView(closure)
+		return overlay(screenshotView.allowsHitTesting(false))
+	}
+}

@@ -5,7 +5,7 @@
 //  Created by Сергей Цайбель on 23.03.2022.
 //
 
-import Foundation
+
 import SwiftUI
 
 struct EmojiArtModel: Codable {

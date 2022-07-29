@@ -150,7 +150,7 @@ struct CompactableIntoContextMenu: ViewModifier {
 	var compact: Bool { horizontalSizeClass == .compact }
 	
 	func body(content: Content) -> some View {
-		if UIDevice.current.userInterfaceIdiom == .phone {
+		if compact {
 			Menu {
 				content
 			} label: {

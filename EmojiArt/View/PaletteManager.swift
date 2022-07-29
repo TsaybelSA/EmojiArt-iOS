@@ -22,8 +22,6 @@ struct PaletteManager: View {
 						VStack(alignment: .leading) {
 							Text(palette.name)
 							Text(palette.emojis)
-							Image(systemName: "circle")
-								
 						}
 					}
 				}

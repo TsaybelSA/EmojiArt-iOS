@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct EmojiArtDocumentView: View {
-	
     @ObservedObject var document: EmojiArtDocument
 	
 	@Environment(\.undoManager) var undoManager
@@ -16,13 +15,15 @@ struct EmojiArtDocumentView: View {
 	
     @ScaledMetric var defaultEmojiFontSize: CGFloat = 40
 	    
+	@State private var screenshotMaker: ScreenshotMaker?
+	@State private var imageToShare: IdentifiableImage?
+	
     var body: some View {
         VStack(spacing: 0) {
             documentBody
             PaletteChoser()
         }
     }
-    
     var documentBody: some View {
         GeometryReader { geometry in
             ZStack {
@@ -74,7 +75,12 @@ struct EmojiArtDocumentView: View {
 					zoomToFit(image, in: geometry.size)
 				}
 			}
-			
+			.popover(item: $imageToShare) { imageToShare in
+				ShareView(itemsToShare: [imageToShare.image])
+			}
+			.screenshotView { screenshotMaker in
+				self.screenshotMaker = screenshotMaker
+			}
 			.compactableToolbar {
 				AnimatedActionButton(title: "Paste Background", systemImage: "doc.on.clipboard") {
 					pasteBackground()
@@ -87,6 +93,14 @@ struct EmojiArtDocumentView: View {
 				if PhotoLibrary.isAvailable {
 					AnimatedActionButton(title: "Search Photos", systemImage: "photo") {
 						backgroundPicker = .library
+					}
+				}
+				
+				AnimatedActionButton(title: "Share Art", systemImage: "square.and.arrow.up") {
+					if let screenshotMaker = screenshotMaker {
+						if let image = screenshotMaker.makeScreenshot(with: geometry.size) {
+							imageToShare = IdentifiableImage(image: image)
+						}
 					}
 				}
 
@@ -110,7 +124,7 @@ struct EmojiArtDocumentView: View {
 	
 	private func handlePickerBackgroundImage(_ image: UIImage?) {
 		autozoom = true
-		if let imageData = image?.jpegData(compressionQuality: 1.0) {
+		if let imageData = image?.jpegData(compressionQuality: 0.5) {
 			document.setBackground(.imageData(imageData), undoManager: undoManager)
 		}
 		backgroundPicker = nil
