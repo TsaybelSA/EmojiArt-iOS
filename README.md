@@ -1,5 +1,5 @@
 # EmojiArt-iOS
-Funny app to decorate your photos or just images from the intrenet with Apple emojis 🤪
+Funny SwiftUI app to decorate your photos or just images from the intrenet with Apple emojis 🤪
 ## Usage
 #### Add Image 
 In split screen mode on IPad drag & drop image from your browser or copy in the internet, take photo or simply choose one from your library.
